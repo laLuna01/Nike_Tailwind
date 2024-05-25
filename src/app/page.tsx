@@ -19,23 +19,23 @@ export default function Home() {
           </h1>
           <p className="font-montserrat text-slate-800 text-lg leading-8 mt-6 mb-10 sm:max-w-sm">Discover stylish Nike arrivals, quality, comfort, and innovation for your active life</p>
           <Button label="Shop Now" icon="./icons/arrow-right.svg"/>
-          <div className="flex justify-start items-start flex-wrap w-full mt-6 gap-16">
+          <div className="flex justify-start items-start flex-wrap w-full mt-6 sm:gap-16 gap-5">
             <div>
-              <p className="text-[42px] font-palanquin font-bold">1k +</p>
+              <p className="sm:text-[42px] text-[35px] font-palanquin font-bold">1k +</p>
               <p className="leading-7 font-montserrat text-slate-800">Brands</p>
             </div>
             <div>
-              <p className="text-[42px] font-palanquin font-bold">500 +</p>
+              <p className="sm:text-[42px] text-[35px] font-palanquin font-bold">500 +</p>
               <p className="leading-7 font-montserrat text-slate-800">Shops</p>
             </div>
             <div>
-              <p className="text-[42px] font-palanquin font-bold">250k +</p>
+              <p className="sm:text-[42px] text-[35px] font-palanquin font-bold">250k +</p>
               <p className="leading-7 font-montserrat text-slate-800">Customers</p>
             </div>
           </div>
         </div>
         <div className="relative flex-1 flex justify-center items-center lg:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
-          <Image className="object-contain relative pb-6 xl:w-[500px] xl:h-[500px] sm:w-[400px] sm:h-[300px] h-[300px]" src={shoe} alt="Shoe collection" width={500} height={500} />
+          <Image className="object-contain relative pb-6 xl:w-[500px] xl:h-[500px] sm:w-[400px] sm:h-[300px] w-[300px] h-[200px]" src={shoe} alt="Shoe collection" width={500} height={500} />
           <div className="flex sm:gap-6 gap-4 absolute bottom-7">
             <ShoeCard img="/images/big-shoe1.png" shoe={shoe} change={() => {setShoe("/images/big-shoe1.png")}} />
             <ShoeCard img="/images/big-shoe2.png" shoe={shoe} change={() => {setShoe("/images/big-shoe2.png")}} />
