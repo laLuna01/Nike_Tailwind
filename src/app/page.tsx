@@ -10,6 +10,7 @@ export default function Home() {
 
   return (
     <main className="relative">
+
       <section id="hero" className="lg:padding-l wide:padding-r w-full flex lg:flex-row flex-col justify-center min-h-screen gap-10 lg:gap-0 xl:gap-10 max-container">
         <div className="relative xl:w-2/5 lg:w-[50%] flex flex-col justify-center items-start w-full max-lg:padding-x pt-[81px]">
           <p className="text-xl font-montserrat text-my-blue z-20">Our Summer Collection</p>
@@ -44,6 +45,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section id="products" className="padding max-container max-sm:mt-12">
         <div className="flex flex-col justify-start gap-5">
           <h2 className="text-4xl font-palanquin font-bold">
@@ -58,24 +60,41 @@ export default function Home() {
           <ProductCard img="/images/shoe7.png" rating="4.5" name="Nike Air Max 90 South Beach" price="220,00"></ProductCard>
         </div>
       </section>
-      <section className="padding">
-        SuperQuality
+
+      <section id="about-us" className="padding flex justify-between items-center max-lg:flex-col gap-10 w-full max-container">
+        <div className="flex flex-1 flex-col">
+          <h2 className="mt-0 font-palanquin text-4xl font-bold lg:max-w-lg">We Provide You <span className="text-my-blue">Super Quality</span> Shoes</h2>
+          <p className="mt-6 font-montserrat text-slate-800 text-lg leading-7 lg:max-w-lg">Ensuring premium comfort and style, our meticulously crafted footwear is designed to elevate your experience, providing you with unmatched quality, innovation, and a touch of elegance</p>
+          <p className="mt-6 font-montserrat text-slate-800 text-lg leading-7 lg:max-w-lg">Our dedication to detail and excellence ensures your satisfaction</p>
+          <div className="mt-10">
+            <Button label="View Details" icon="./icons/arrow-right.svg"/>
+          </div>
+        </div>
+        <div className="flex flex-1 justify-center items-center">
+            <Image src="/images/shoe8.png" alt="shoe" width={500} height={500}></Image>
+        </div>
       </section>
+
       <section className="padding-x py-10">
         Services
       </section>
+
       <section className="padding">
         SpecialOffer
       </section>
+
       <section className="padding bg-pale-blue">
         CustomerReviews
       </section>
+
       <section className="padding-x sm:py-32 py-16 w-full">
         Subscribe
       </section>
+
       <section className="padding-x bg-black padding-t pb-8">
         Footer
       </section>
+
     </main>
   );
 }

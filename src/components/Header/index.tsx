@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="padding-x py-4 absolute z-10 w-full bg-[#ffffff9a] border-b">
+    <header className="padding-x py-4 fixed top-0 z-20 w-full bg-[#ffffff] border-b">
         <nav className="flex justify-between items-center max-container">
             <a href="/">
                 <Image src="./images/header-logo.svg" alt="Logo" width={80} height={25}></Image>
