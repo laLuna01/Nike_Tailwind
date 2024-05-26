@@ -1,5 +1,6 @@
 "use client"
 import Button from "@/components/Button";
+import ProductCard from "@/components/ProductCard";
 import ShoeCard from "@/components/ShoeCard";
 import Image from "next/image";
 import { useState } from "react";
@@ -43,8 +44,19 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="padding">
-        PopularProducts
+      <section id="products" className="padding max-container max-sm:mt-12">
+        <div className="flex flex-col justify-start gap-5">
+          <h2 className="text-4xl font-palanquin font-bold">
+            Our <span className="text-my-blue">Popular</span> Products
+          </h2>
+          <p className="lg:max-w-lg mt-2 font-montserrat text-slate-800">Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value</p>
+        </div>
+        <div className="mt-12 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-14">
+          <ProductCard img="/images/shoe4.svg" rating="4.5" name="Nike Legend Essential 2" price="200,00"></ProductCard>
+          <ProductCard img="/images/shoe5.png" rating="5.0" name="Nike Air Jordan 4 Retro Thunder" price="210,00"></ProductCard>
+          <ProductCard img="/images/shoe6.svg" rating="5.0" name="Nike MD Runner 2 Suede" price="180,00"></ProductCard>
+          <ProductCard img="/images/shoe7.png" rating="4.5" name="Nike Air Max 90 South Beach" price="220,00"></ProductCard>
+        </div>
       </section>
       <section className="padding">
         SuperQuality
