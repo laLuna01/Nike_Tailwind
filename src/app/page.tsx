@@ -1,5 +1,6 @@
 "use client"
 import Button from "@/components/Button";
+import CustomerReview from "@/components/CustomerReview";
 import ProductCard from "@/components/ProductCard";
 import ServiceCard from "@/components/ServiceCard";
 import ShoeCard from "@/components/ShoeCard";
@@ -97,8 +98,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="padding bg-pale-blue">
-        CustomerReviews
+      <section id="customers" className="padding bg-pale-blue max-container">
+        <h3 className="font-palanquin text-center text-4xl font-bold">What Our <span className="text-my-blue">Customers</span> Say?</h3>
+        <p className="text-slate-800 font-montserrat text-lg leading-7 m-auto mt-4 max-w-lg text-center">Hear genuine stories from our satisfied customers about their exceptional experience with us.</p>
+        <div className="mt-12 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14">
+          <CustomerReview img="/images/customer1.jpeg" feedback="The attention to detail and the quality of the product exceeded my expectations. Highly recommended!" rating="(5.0)" name="Morich Brown"></CustomerReview>
+          <CustomerReview img="/images/customer2.svg" feedback="The product not only met but exceeded my expectations. I'll definitely be a returning custommer!" rating="(5.0)" name="Lota Mongeskar"></CustomerReview>
+        </div>
       </section>
 
       <section className="padding-x sm:py-32 py-16 w-full">
