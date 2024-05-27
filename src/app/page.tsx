@@ -1,6 +1,7 @@
 "use client"
 import Button from "@/components/Button";
 import ProductCard from "@/components/ProductCard";
+import ServiceCard from "@/components/ServiceCard";
 import ShoeCard from "@/components/ShoeCard";
 import Image from "next/image";
 import { useState } from "react";
@@ -75,8 +76,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="padding-x py-10">
-        Services
+      <section id="services" className="padding-x py-10 max-container flex flex-wrap justify-center gap-9">
+        <ServiceCard icon="/icons/truck-fast.svg" service="Free shipping" text="Enjoy seamless shopping with our complimentary shipping service"></ServiceCard>
+        <ServiceCard icon="/icons/shield-tick.svg" service="Secure Payment" text="Experience worry-free transactions with our secure payment options"></ServiceCard>
+        <ServiceCard icon="/icons/support.svg" service="Love to help you" text="Our dedicated team is here to assist you every step of the way"></ServiceCard>
       </section>
 
       <section className="padding">
