@@ -68,7 +68,7 @@ export default function Home() {
           <p className="mt-6 font-montserrat text-slate-800 text-lg leading-7 lg:max-w-lg">Ensuring premium comfort and style, our meticulously crafted footwear is designed to elevate your experience, providing you with unmatched quality, innovation, and a touch of elegance</p>
           <p className="mt-6 font-montserrat text-slate-800 text-lg leading-7 lg:max-w-lg">Our dedication to detail and excellence ensures your satisfaction</p>
           <div className="mt-10">
-            <Button label="View Details" icon="./icons/arrow-right.svg"/>
+            <Button label="View Details" />
           </div>
         </div>
         <div className="flex flex-1 justify-center items-center">
@@ -82,8 +82,19 @@ export default function Home() {
         <ServiceCard icon="/icons/support.svg" service="Love to help you" text="Our dedicated team is here to assist you every step of the way"></ServiceCard>
       </section>
 
-      <section className="padding">
-        SpecialOffer
+      <section id="special-offer" className="padding flex justify-center items-center max-lg:flex-col-reverse gap-10 max-container">
+        <div className="flex-1">
+          <Image className="object-contain w-full" src="/images/offer.svg" alt="offer image" width={630} height={560}></Image>
+        </div>
+        <div className="flex flex-1 flex-col">
+          <h2 className="mt-0 font-palanquin text-4xl font-bold lg:max-w-lg"><span className="text-my-blue">Special</span> Offer</h2>
+          <p className="mt-6 font-montserrat text-slate-800 text-lg leading-7 lg:max-w-lg">Embark on a shopping journey that redefines your experience with unbeatable deals. From premier selections to incredible savings, we offer unparalleled value that sets us apart.</p>
+          <p className="mt-6 font-montserrat text-slate-800 text-lg leading-7 lg:max-w-lg">Navigate a realm of possibilities designed to fulfill your unique desires, surpassing the loftiest expectations. Your journey with us is nothing short of exceptional.</p>
+          <div className="mt-10 flex flex-wrap gap-5">
+            <Button label="Shop now" icon="./icons/arrow-right.svg"/>
+            <Button label="Learn more" color="white"/>
+          </div>
+        </div>
       </section>
 
       <section className="padding bg-pale-blue">
