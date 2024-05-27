@@ -117,10 +117,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="padding-x bg-black padding-t pb-8">
-        Footer
-      </section>
-
     </main>
   );
 }
